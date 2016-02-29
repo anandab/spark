@@ -105,7 +105,6 @@ class RowTest extends FunSpec with Matchers {
       internalRow shouldEqual internalRow2
     }
   }
-fail " "
   describe("row immutability") {
     val values = Seq(1, 2, "3", "IV", 6L)
     val externalRow = Row.fromSeq(values)
